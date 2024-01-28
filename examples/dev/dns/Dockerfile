@@ -1,4 +1,4 @@
-FROM alpine:3.12.12
+FROM alpine:3.18.6
 RUN apk --no-cache add dnsmasq-dnssec
 EXPOSE 53 53/udp
 ENTRYPOINT ["dnsmasq", "-k"]
